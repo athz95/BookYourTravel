@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookYourTravel</title>
+    <!--styles links-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-family.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    
+</head>
+
+<body>
+   <div class="container">
+       <!-- //header -->
+       <div class="row header-row">
+           <div class="col-md-3 header-logo">
+              <a href="homepage.html">
+                <img src="assets/images/logo.png" alt="logo">
+              </a>
+           </div>
+           <div class="col-md-5 header-middle">
+               <img src="assets/images/search-icon.png" alt="">
+               <input type="text" placeholder="Search your destinations here..." />
+           </div>
+           <div class="col-md-4 header-right">
+                <div class="header-right-details">
+                    <img src="assets/images/email.png" alt="">
+                    <p>contact@travelworld.com</p>
+                </div>
+                <div class="header-right-details" style="padding-top:6%;">
+                    <img src="assets/images/user-icon.png" alt="">
+                    <p>Login / Sign Up</p>
+                </div>
+                <div class="header-right-details" >
+                    <img src="assets/images/phone-icon.png" alt="">
+                    <p>8110 811 82 82</p>
+                </div>
+               
+           </div>
+       </div>
+       <!-- //banner-links -->
+      <div class="homepage-banner">
+          <div class="banner-links">
+              <a href=''>Hotels</a>
+              <a href=''>Flights</a>
+              <a href=''>Flights + Hotel</a>
+              <a href=''>Self Catering</a>
+              <a href=''>Cruises</a>
+              <a href=''>Car Rental</a>
+              <a href=''>Locations</a>
+              <a href=''>Hot Deals</a>
+              <a href=''>Pages</a>
+              <a href=''>Contact</a>
+              <a href=''>Blog</a>
+              <a href=''>Purchase</a>
+          </div>
+      </div>
+
+      <div class="container">
+            <div id="exTab1" class="container">	
+            <ul  class="nav nav-pills tab-main">
+                    <li class="homepage-tab ">
+                       <a  href="#1a" data-toggle="tab" class="active ">Hotels</a>
+                    </li>
+                    <li class="homepage-tab">
+                        <a href="#2a" data-toggle="tab">Excursions</a>
+                    </li>
+                    <li class="homepage-tab">
+                        <a href="#3a" data-toggle="tab">Transfers</a>
+                    </li>
+                    <li class="homepage-tab">
+                        <a href="#4a" data-toggle="tab">Visa</a>
+                    </li>
+                    <li class="homepage-tab last">
+                        <a href="#5a" data-toggle="tab">Others</a>
+                    </li>
+             </ul>
+
+            <div class="tab-content clearfix">
+                <div class="tab-pane active" id="1a">
+                    <div class="tab-fields">
+                        <h3>Plan Your Journey</h3>
+                        <div class="fields-row">
+                            <div class="fields">
+                                <label for="input"> Destination</label> <br>
+                                <input type="text" placeholder="Enter Your City">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Star Rating</label> <br>
+                                <select placeholder="5 Star">
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">Check In  </label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Check Out</label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date2">
+                            </div>
+                            <div class="fields">
+                                <button class="booking-btn form-control">Search Now</button>
+                            </div>
+                        </div>
+
+                        <div class="fields-row" id="advanced-fields">
+                            <div class="fields">
+                                <label for="input"> Natinality</label> <br>
+                                <select >
+                                    <option value="">Emirati</option>
+                                    <option value="">Indian</option>
+                                    <option value="">Arab</option>
+                                    <option value="">Portugese</option>
+                                    <option value="">Europe</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Currency</label> <br>
+                                <select >
+                                    <option value="">AED</option>
+                                    <option value="">USD</option>
+                                    <option value="">INR</option>
+                                    <option value="">DNR</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Nights</label> <br>
+                                <select >
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Room occupancy</label> <br>
+                                <select >
+                                    <option value="">5</option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Adults</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Childs</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2</option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5 id="advanced">Advanced Search <img src="assets/images/search-down.png" alt=""></h5>
+                       
+                    </div>
+
+                </div>
+                <div class="tab-pane" id="2a">
+                </div>
+                <div class="tab-pane" id="3a">
+                </div>
+                <div class="tab-pane" id="4a">
+               </div>
+               <div class="tab-pane" id="5a">
+               </div>
+            </div>
+      </div>
+      </div>
+
+      <!-- //recent-search -->
+
+      <div class="body-wrap">
+
+     
+      <div class="recent-search">
+          <h4>Your Recent Searches</h4>
+          <p>Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum</p>
+
+          <div class="search-boxes-row">
+              <div class="search-box">
+                   <div class="box-head">
+                       <p><img src="assets/images/bed-icon.png" alt="bed-icon"> Recent hotel search</p>
+                       <img src="assets/images/cross-icon.png" alt="cross-icon">
+                   </div>
+
+                   <div class="box-body">
+                       <h5>DUBAI, United Arab Emirates</h5>
+                       <h6>19 Nov 2021-21 Nov 2021, 2Nights, 6 guest(s)</h6>
+                   </div>
+              </div>
+
+              <div class="search-box">
+                <div class="box-head">
+                    <p><img src="assets/images/bed-icon.png" alt="bed-icon"> Recent hotel search</p>
+                    <img src="assets/images/cross-icon.png" alt="cross-icon">
+                </div>
+
+                <div class="box-body">
+                    <h5>DUBAI, United Arab Emirates</h5>
+                    <h6>19 Nov 2021-21 Nov 2021, 2Nights, 6 guest(s)</h6>
+                </div>
+           </div>
+
+           <div class="search-box">
+            <div class="box-head">
+                <p><img src="assets/images/bed-icon.png" alt="bed-icon"> Recent hotel search</p>
+                <img src="assets/images/cross-icon.png" alt="cross-icon">
+            </div>
+
+            <div class="box-body">
+                <h5>DUBAI, United Arab Emirates</h5>
+                <h6>19 Nov 2021-21 Nov 2021, 2Nights, 6 guest(s)</h6>
+            </div>
+       </div>
+
+          </div>
+      </div>
+
+
+      <!-- //latest-offers -->
+      <div class="latest-offers">
+        <h4 class="latest-title">Explore our latest offers</h4>
+        <p>Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum</p>
+
+        <div class="latest-offers-boxes row">
+            <div class="latest-offers-box box-1 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/singapore-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">SINGAPORE </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn"> Explore</button>
+            </div>
+
+            <div class="latest-offers-box box-2 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/england-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">ENGLAND </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn"> Explore</button>
+            </div>
+
+            <div class="latest-offers-box box-3 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/newzeland-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">NEWZEALAND </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn "> Explore</button>
+            </div>
+        </div>
+
+        <div class="latest-offers-boxes row">
+            <div class="latest-offers-box box-4 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/malaysia-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">MALAYSIA </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn"> Explore</button>
+            </div>
+
+            <div class="latest-offers-box box-5 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/england-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">ENGLAND </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn"> Explore</button>
+            </div>
+
+            <div class="latest-offers-box box-6 col-md-3 col-lg-3">
+                <!-- <img class="package-img" src="assets/images/egypt-img.png" alt=""> -->
+                <img class="offer-tag" src="assets/images/offer-tag.png" alt="">
+                <div class="package-details">
+                    <h4 class="package-name">EGYPT </h4>
+                    <div class="package-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="package-description">
+                        Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum
+                    </p>
+                </div>
+                   <button class="offers-btn "> Explore</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- //top-destinations -->
+      <div class="top-destinations">
+          <h4 class="top-desc-title">Top destinations around the world</h4>
+           <p class='destination-description'>Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum</p>
+
+          <div class="top-destination-boxes row">
+
+              <div class="top-destination-box dest-1 col-md-3 col-lg-3">
+                  <div class="top-destination-details">
+                    <div class="destination-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="package-name">GREECE </h5>
+
+                <div class="destination-sec">
+                    <div class="destination-middle">
+                        <div class="destination-price">
+                            <img src="assets/images/hotel-icon.png" alt="">
+                            <p>FROM</p>
+                            
+                        </div>
+                        <div class="destination-price-1">
+                            <p>$</p>
+                            <p>58</p>
+                        </div>
+                    </div>
+
+                    <div class="destination-middle">
+                        <div class="destination-price">
+                            <img src="assets/images/flight-icon.png" alt="">
+                            <p>FROM</p>
+                        </div>
+                        <div class="destination-price-1">
+                            <p>$</p>
+                            <p>58</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="destination-desc">
+                    Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+                </p>
+                <button class="destination-btn">VIEW MORE</button>
+                  </div>
+              </div>
+
+              <div class="top-destination-box dest-2 col-md-3 col-lg-3">
+                <div class="top-destination-details">
+                  <div class="destination-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="package-name">FRANCE </h5>
+
+              <div class="destination-sec">
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img  src="assets/images/hotel-icon.png" alt="">
+                          <p>FROM</p>
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img src="assets/images/flight-icon.png" alt="">
+                          <p>FROM</p>
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+              </div>
+              <p class="destination-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+              </p>
+              <button class="destination-btn">VIEW MORE</button>
+                </div>
+            </div>
+
+            <div class="top-destination-box dest-3 col-md-3 col-lg-3">
+                <div class="top-destination-details">
+                  <div class="destination-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="package-name">SPAIN </h5>
+
+              <div class="destination-sec">
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img src="assets/images/hotel-icon.png" alt="">
+                          <p>FROM</p>
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img src="assets/images/flight-icon.png" alt="">
+                          <p>FROM</p>
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+              </div>
+              <p class="destination-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+              </p>
+              <button class="destination-btn ">VIEW MORE</button>
+                </div>
+            </div>
+
+
+          </div>
+
+          <div class="top-destination-boxes row">
+
+            <div class="top-destination-box dest-4 col-md-3 col-lg-3">
+                <div class="top-destination-details">
+                  <div class="destination-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="package-name">GREECE </h5>
+
+              <div class="destination-sec">
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img src="assets/images/hotel-icon.png" alt="">
+                          <p>FROM</p>
+                          
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+
+                  <div class="destination-middle">
+                      <div class="destination-price">
+                          <img src="assets/images/flight-icon.png" alt="">
+                          <p>FROM</p>
+                      </div>
+                      <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                      </div>
+                  </div>
+              </div>
+              <p class="destination-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+              </p>
+              <button class="destination-btn ">VIEW MORE</button>
+                </div>
+            </div>
+
+            <div class="top-destination-box dest-5 col-md-3 col-lg-3">
+              <div class="top-destination-details">
+                <div class="destination-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="package-name">FRANCE </h5>
+
+            <div class="destination-sec">
+                <div class="destination-middle">
+                    <div class="destination-price">
+                        <img  src="assets/images/hotel-icon.png" alt="">
+                        <p>FROM</p>
+                    </div>
+                    <div class="destination-price-1">
+                            <p>$</p>
+                            <p>58</p>
+                    </div>
+                </div>
+
+                <div class="destination-middle">
+                    <div class="destination-price">
+                        <img src="assets/images/flight-icon.png" alt="">
+                        <p>FROM</p>
+                    </div>
+                    <div class="destination-price-1">
+                            <p>$</p>
+                            <p>58</p>
+                    </div>
+                </div>
+            </div>
+            <p class="destination-desc">
+                Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+            </p>
+            <button class="destination-btn">VIEW MORE</button>
+              </div>
+          </div>
+
+          <div class="top-destination-box dest-6 col-md-3 col-lg-3">
+              <div class="top-destination-details">
+                <div class="destination-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="package-name">SPAIN </h5>
+
+            <div class="destination-sec">
+                <div class="destination-middle">
+                    <div class="destination-price">
+                        <img src="assets/images/hotel-icon.png" alt="">
+                        <p>FROM</p>
+                    </div>
+                    <div class="destination-price-1">
+                            <p>$</p>
+                             <p>58</p>
+                    </div>
+                </div>
+
+                <div class="destination-middle">
+                    <div class="destination-price">
+                        <img src="assets/images/flight-icon.png" alt="">
+                        <p>FROM</p>
+                    </div>
+                    <div class="destination-price-1">
+                        <p>$</p>
+                        <p>58</p>
+                    </div>
+                </div>
+            </div>
+            <p class="destination-desc">
+                Lorem ipsum, or lipsum Lorem ipsum, or lips Lorem ipsum, or lipsum Lorem ipsum, or
+            </p>
+            <button class="destination-btn ">VIEW MORE</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //services -->
+      <div class="services-sec py-3">
+
+          <div class="services-row row">
+                <div class="service-box service-1 col-md-3 col-lg-3">
+                     <!-- <img class="service-img" src="assets/images/footer-package-1.png" alt=""> -->
+                     <div class="service-box-details">
+                         <h5 class="service-title">Handpicked Hotels</h5>
+                         <p class="service-desc">
+                            All Book Your Travel Hotels fulfil strict selection criteria. Each hotel is chosen individually and inclusion cannot be bought.
+                         </p>
+                     </div>
+                </div>
+
+                <div class="service-box service-2  col-md-3 col-lg-3">
+                    <!-- <img class="service-img" src="assets/images/footer-package-2.png" alt=""> -->
+                    <div class="service-box-details">
+                        <h5 class="service-title">Detailed Descriptions</h5>
+                        <p class="service-desc"> 
+                            To give you an accurate impression of the hotel, we endeavor to publish transparent, balanced and precise hotel descriptions.                       
+                         </p>
+                    </div>
+               </div>
+
+               <div class="service-box service-3  col-md-3 col-lg-3">
+                <!-- <img class="service-img" src="assets/images/footer-package-3.png" alt=""> -->
+                <div class="service-box-details">
+                    <h5 class="service-title">Exclusive Knowledge</h5>
+                    <p class="service-desc">
+                        We’ve done our research. Our scouts are always busy finding out more about our hotels, the surroundings and activities on offer nearby.                   
+                    </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="services-row row">
+            <div class="service-box service-4  col-md-3 col-lg-3">
+                 <!-- <img class="service-img" src="assets/images/footer-package-4.png" alt=""> -->
+                 <div class="service-box-details">
+                     <h5 class="service-title">Passionate Service</h5>
+                     <p class="service-desc">
+                        Book Your Travels’s team will cater to your special requests. We offer expert and passionate advice for finding the right hotel.                     
+                    </p>
+                 </div>
+            </div>
+
+            <div class="service-box service-5  col-md-3 col-lg-3">
+                <!-- <img class="service-img" src="assets/images/footer-package-5.png" alt=""> -->
+                <div class="service-box-details">
+                    <h5 class="service-title">Best Price Guarantee</h5>
+                    <p class="service-desc"> 
+                        We offer the best hotels at the best prices. If you find the same room category on the same dates cheaper elsewhere, we will refund the difference. Guaranteed, and quickly.                   
+                    </p>
+                </div>
+           </div>
+
+           <div class="service-box service-6  col-md-3 col-lg-3">
+            <!-- <img class="service-img" src="assets/images/footer-package-6.png" alt=""> -->
+            <div class="service-box-details">
+                <h5 class="service-title">Secure Booking</h5>
+                <p class="service-desc">
+                    Book Your Travel reservation system is secure and your credit card and personal information is encrypted.We work to high standards and guarantee your privacy.               
+                </p>
+            </div>
+          </div>
+      </div>
+
+      <div class="services-row row">
+        <div class="service-box service-7  col-md-3 col-lg-3">
+             <!-- <img class="service-img" src="assets/images/footer-package-7.png" alt=""> -->
+             <div class="service-box-details">
+                 <h5 class="service-title">Benefits for Hoteliers</h5>
+                 <p class="service-desc">
+                    We provide a cost-effective model, a network of over 5000 partners and a personalised account management service to help you optimise your revenue.     
+                </p>
+             </div>
+        </div>
+
+        <div class="service-box service-8  col-md-3 col-lg-3">
+            <!-- <img class="service-img" src="assets/images/footer-package-8.png" alt=""> -->
+            <div class="service-box-details">
+                <h5 class="service-title">Any Questions?</h5>
+                <p class="service-desc"> 
+                    Call us on 1-555-555-555 for individual, tailored advice for your perfect stay or send us a message with your hotel booking query.                
+                </p>
+            </div>
+       </div>
+
+
+     </div>
+    </div>
+     </div>
+
+    <footer class="footer-container">
+        <div class="row footer-top-row">
+            <div class="col-md-3 col-lg-3">
+                  <h5 class="footer-titles">
+                      Book Your Travel
+                  </h5>
+                  <p class="footer-details-desc">
+                      1400 PennsylSUVia Ave. Washington, DC <br>
+                      <span>P:</span>24/7 customer support: 1-555-555-5555 <br>
+                      <span>E:</span>booking@gmail.com
+                  </p>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+                  <h5 class="footer-titles">Customer Support</h5>
+                  <ul class="footer-details">
+                      <li>Faq</li>
+                      <li>How do I make a reservation</li>
+                      <li>Payment Options</li>
+                      <li>Booking Tips</li>
+                  </ul>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+                  <h5 class="footer-titles">Follow Us</h5>
+                   <div class="social-icons">
+                        <i class="fab fa-facebook footer-icon"></i>
+                        <i class="fab fa-youtube footer-icon"></i>
+                        <i class="fab fa-google-plus-g footer-icon"></i>
+                        <i class="fab fa-linkedin footer-icon"></i>
+                        <i class="fab fa-pinterest-square footer-icon"></i>
+                        <i class="fab fa-twitter-square footer-icon"></i>
+                        <i class="fab fa-vimeo-v footer-icon"></i>
+                   </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+                  <h5 class="footer-titles">Don't miss our exclusive offers </h5>
+                  <div class="footer-signup-sec">
+                    <input class="footer-input" type="text" placeholder="Enter your email here">
+                    <button class="footer-btn form-control">SIGNUP</button> 
+                  </div>
+                  
+            </div>
+        </div>
+        <div class="row footer-bottom-row">
+            <div class="col-md-4 col-lg-4">
+                <p>Copyright 2016 Book your travel LTD. All rights reserved</p>
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <div class="footer-links">
+                    <a href="">About Us</a> |
+                    <a href="">Contact</a> |
+                    <a href="">Partners</a>  |
+                    <a href="">Customer Service</a>|
+                    <a href="">FAQ</a>|
+                    <a href="">Careers</a>|
+                    <a href="">Terms & Conditions</a>|
+                    <a href="">Privacy Statament</a>
+                </div>
+            </div>
+        </div>
+    </footer>  
+
+   </div>
+    
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   
+       <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/all.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#advanced-fields").hide();
+        });
+
+        $("#advanced").click(function(){
+            $("#advanced-fields").toggle().slow();
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date" ).datepicker();
+        });
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date2" ).datepicker();
+        });
+    </script>
+   
+</body>
+</html>
