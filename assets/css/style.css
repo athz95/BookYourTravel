@@ -1611,7 +1611,7 @@ button.map-btn {
  }
 .booking-actions-row{
      justify-content: center;
-     margin: 1% auto 0% auto;
+     margin: 1% auto 1% auto;
      background-color: #fff;
      padding: 1%;
      width: 90%;
@@ -1642,20 +1642,23 @@ button.map-btn {
 }
 .booking-details-btn{
      border: none;
-     padding: 5px 70px;
+     padding: 0px 70px;
      color: white;
      background-color: #FFC904;
      font-weight: 450;
      font-size: 24px;
      margin-left: 2%;
      cursor: pointer;
+     margin-top: 1%;
 }
 .table-heads{
      width: 85%;
      margin: 1% auto 0% auto;
      background-color: #fff;
-     padding: 1%;
-     
+     padding: 1%;    
+}
+th p {
+     border-left: 1px solid darkgray;
 }
 .table-title-box{
      width: 100%;  
@@ -1677,7 +1680,7 @@ button.map-btn {
 .booking-table{
      width: 90% !important;
      margin: auto;
-     margin-bottom: 4%;
+     
 }
 tr.booking-table-rows {
      background: white;
@@ -1746,10 +1749,10 @@ tr.booking-table-rows {
      padding-top: 10%;
      color: darkgray;
  }
- .status-confirm{
-      color: #5FD973 !important;
+ .status-confirm p{
+      color: #5FD973!important;
  }
- .status-cancelled{
+ .status-cancelled p{
      color: red !important;
  }
  td {
@@ -1769,4 +1772,36 @@ tr.booking-table-rows {
  }
  .hotel-list-row{
       margin: 0px !important;
+ }
+ .toggle-rows td p {
+      border-left: 1px solid darkgray;
+      font-size: 18px;
+      color: #707070;
+ }
+ .toggle-rows td {
+     font-size: 18px;
+     color: #707070;
+}
+ .booking-table-rows td p{
+     border-left: 1px solid darkgray;
+     font-size: 17px;
+      color: #707070;
+ }
+ .booking-table-rows th p{
+     font-size: 18px;
+     color: #707070;
+     font-weight: 600 !important;
+ }
+ .booking-pagination{
+      justify-content: flex-end;
+      width: 95%;
+      margin-top: 0.5%;
+ }
+ .booking-pagination .page-item .page-link {
+     background-color: #fff !important;
+     color: darkgray !important;
+}
+ .booking-pagination .page-item .page-link:focus {
+      background-color: #5FC8C2 !important;
+      color: white !important;
  }

@@ -6,12 +6,31 @@
         max-width: 1320px;
         margin: 1% auto 1% auto;
     }
+    .tab-main .active {
+        background-color: black;
+        color: white !important;
+        padding: 20px 74px;
+        width: 15%;
+        margin-left: 0%;
+    }
+    .homepage-tab {
+        width: 13%;
+        background-color: #fff;
+        padding: 20px 0px;
+        text-align: center;
+    }
 
 }
 
 
 /* //below-1300px */
 @media screen and (max-width: 1300px) and (min-width: 1100px) {
+    .homepage-tab {
+        width: 14%;
+        background-color: #fff;
+        padding: 20px 0px;
+        text-align: center;
+    }
     .tab-main .active {
         background-color: black;
         color: white !important;
@@ -307,14 +326,6 @@
         margin: 14px 0px;
         font-size: 15px;
         font-weight: 300;
-    }
-    .booking-actions-row select {
-        width: 10%;
-        margin-right: 1%;
-        padding: 2px 10px;
-        color: darkgray;
-        border: 1px solid darkgray;
-        font-size: 16px;
     }
 }
   
@@ -786,7 +797,7 @@
         flex-wrap: wrap;
     }
     .booking-actions-row select {
-        width: 29%;
+        width: 32%;
         margin-right: 1%;
         padding: 2px 10px;
         color: darkgray;
@@ -794,13 +805,33 @@
         font-size: 16px;
         margin-bottom: 1%;
     }
+    .booking-details-btn {
+        border: none;
+        padding: 4px 100px;
+        color: white;
+        background-color: #FFC904;
+        font-weight: 450;
+        font-size: 18px;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .booking-table {
+        width: 923px!important;
+        
+    }
     
 }
   /* //below-900px */
 @media screen and (max-width: 900px) and (min-width: 768px) {
+    .back-icon {
+        margin-right: 2%;
+        cursor: pointer;
+        position: absolute;
+        top: 235px;
+        left: 15px;
+    }
     .booking-table{
-        width: 800px !important;
-        overflow: scroll;
+        width: 900px !important;
    }
    .booking-actions-row {
     justify-content: center;
@@ -832,6 +863,9 @@
         display: block;
         width: 5%;
         font-size: 15px;
+    }
+    .sidebar-sec{
+        display: none;
     }
     .svg-inline--fa.fa-w-14 {
         width: 4.875em !important;
@@ -1131,6 +1165,7 @@
         position: absolute;
         z-index: 9999;
         left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     .booking-btn-submit {
         background-color: #fff;
@@ -1335,6 +1370,42 @@
 }
  /* //below-768px */
  @media screen and (max-width: 768px) and (min-width: 600px) {
+    .back-icon {
+        margin-right: 2%;
+        cursor: pointer;
+        position: absolute;
+        top: 235px;
+        left: 15px;
+        display: none;
+    }
+    .booking-actions-row select {
+        width: 49%;
+        margin-right: 1%;
+        padding: 2px 10px;
+        color: darkgray;
+        border: 1px solid darkgray;
+        font-size: 14px;
+        margin-bottom: 1%;
+    }
+    .booking-details-btn {
+        border: none;
+        padding: 4px 100px;
+        color: white;
+        background-color: #FFC904;
+        font-weight: 450;
+        font-size: 14px;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .booking-actions-row input {
+        padding: 2px 10px;
+        border: 1px solid darkgray;
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+    .booking-table{
+        width: 900px !important;    
+   }
     .sidebar-menu{
         display: block;
     }
@@ -1343,6 +1414,7 @@
         position: absolute;
         z-index: 9999;
         left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     .header-right-details {
         display: flex;
@@ -1711,10 +1783,11 @@
     }
     .sidebar-sec {
         margin-right: 1%;
-        width: 25%;
+        width: 35%;
         position: absolute;
         z-index: 9999;
         left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     .booking-btn-submit {
         background-color: #fff;
@@ -1950,11 +2023,58 @@
   
  /* //below-600px */
  @media screen and (max-width: 600px) and (min-width: 300px) {
+    .back-icon {
+        margin-right: 2%;
+        cursor: pointer;
+        position: absolute;
+        top: 215px;
+        left: 6px;
+    }
+    .booking-actions-row select {
+        width: 87%;
+        margin-right: 1%;
+        padding: 2px 10px;
+        color: darkgray;
+        border: 1px solid darkgray;
+        font-size: 13px;
+        margin-bottom: 3%;
+    }
+    .booking-details-btn {
+        border: none;
+        padding: 2px 50px;
+        color: white;
+        background-color: #FFC904;
+        font-weight: 450;
+        font-size: 14px;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .booking-actions-row input {
+        padding: 2px 10px;
+        border: 1px solid darkgray;
+        font-size: 13px;
+        margin-bottom: 3%;
+    }
+    .booking-actions-row {
+        justify-content: center;
+        margin: 1% auto 0% auto;
+        background-color: #fff;
+        padding: 4%;
+        width: 90%;
+        flex-wrap: wrap;
+    }
     .header-right-details {
         display: flex;
-        width: 50%;
+        width: 55%;
         justify-content: flex-start;
         padding: 0px !important;
+        margin-top: 0% !important;
+    }
+    .booking-row h4 {
+        margin-left: 1%;
+        margin-top: 0.5%;
+        font-weight: 600;
+        font-size: 22px;
     }
     .nav {
         width: 90% !important;
@@ -2362,6 +2482,7 @@
         position: absolute;
         z-index: 9999;
         left: 5%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     .booking-btn-submit {
         background-color: #fff;
@@ -2496,7 +2617,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
         padding-left: 4%;
     }
     .package-fields {
@@ -2581,9 +2702,13 @@
     }
     p.-hotel-rating-reviews {
         color: white;
-        margin: 16px 0px;
+        margin: 10px 0px;
         font-size: 15px;
         font-weight: 300;
+    }
+    .room-tab-right p {
+        margin-top: 1.7%;
+        text-align: right;
     }
     .room-tab3-left img {
         width: 15px;
@@ -2673,7 +2798,7 @@
     }
     .room-tab3-right {
         border-left: 2px solid darkgray;
-        width: 15%;
+        width: 19%;
         padding-top: 2.5%;
     }
     .booking-price-btn {
