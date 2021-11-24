@@ -2034,9 +2034,10 @@ tr.booking-table-rows.toggle-rows.toggle-headings {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 100% !important;
 }
-.close-button{
+#close-button{
   position: absolute;
   right: 10px;
   top: 20px;
   cursor: pointer;
+  z-index: 99999;
 }

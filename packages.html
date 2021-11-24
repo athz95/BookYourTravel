@@ -11,7 +11,6 @@
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"
     />
-    <link rel="stylesheet" href="assets/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link
@@ -101,7 +100,7 @@
         <!-- Large modal -->
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            <i class="far fa-times-circle close-button"></i>
+            <i class="far fa-times-circle " id="close-button"></i>
 
             <div class="modify-search-container">
               <div class="fields-row package-fields-row" id="advanced-fields-1">
@@ -1048,8 +1047,9 @@
     </script>
 
     <script>
-      $(".close-button").click(function () {
-        $(".card-body").hide();
+      $("#close-button").click(function () {
+        console.log("clicked");
+        $(".modify-search-container").hide();
       });
     </script>
   </body>

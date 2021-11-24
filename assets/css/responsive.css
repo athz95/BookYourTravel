@@ -25,6 +25,12 @@
     font-size: 16px;
     font-weight: 600;
   }
+  .offer-tag {
+    width: 25%;
+    float: left;
+    margin-left: -49px;
+    margin-top: -25px;
+}
 }
 
 /* //below-1300px */
@@ -1904,7 +1910,7 @@
   .fields select {
     outline: none;
     padding: 2%;
-    width: 80px;
+    width: 69%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -1915,11 +1921,13 @@
     border: none;
     color: #fff;
     background-color: #5fc8c2;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 50px;
     font-size: 10px;
     font-weight: 500;
     cursor: pointer;
+    width: 126px;
+    margin: 16px 80% 0px 66%;
   }
   .tab-content > h5 {
     font-size: 12px;
@@ -2384,9 +2392,16 @@
     align-items: center;
     width: 100%;
     justify-content: flex-start;
-    padding-left: 4%;
+    padding-left: 16%;
     flex-wrap: wrap;
   }
+  .tab-fields h5 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 11px;
+    font-weight: 550;
+    cursor: pointer;
+}
   /* //hotels */
   .hotel-top-1 h3 {
     font-size: 35px;
@@ -2658,7 +2673,7 @@
   .fields select {
     outline: none;
     padding: 2%;
-    width: 160px;
+    width: 83%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -2669,7 +2684,7 @@
     border: none;
     color: #fff;
     background-color: #5fc8c2;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 50px;
     font-size: 10px;
     font-weight: 500;
@@ -2677,9 +2692,19 @@
     margin: 0%;
     position: absolute;
     bottom: 37px;
-    left: 23%;
-    width: 200px;
-  }
+    left: 28%;
+    width: 150px;
+}
+.tab-fields h5 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 11px;
+  font-weight: 550;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  left: 34%;
+}
   .tab-content > h5 {
     font-size: 12px;
     font-weight: 600;
