@@ -1,588 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookYourTravel</title>
+    <!--styles links-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-family.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookYourTravel</title>
-  <!--styles links-->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-family.css">
-  <link rel="stylesheet" href="assets/css/all.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-</head>
+  <body>
+    <div class="container">
+      <!-- //header -->
+      <div class="row header-row">
+        <div class="header-logo">
+          <a href="homepage.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
 
-<body>
-  <div class="container">
-    <!-- //header -->
-    <div class="row header-row">
-      <div class="col-md-3 header-logo">
-        <a href="homepage.html">
-          <img src="assets/images/logo.png" alt="logo">
-        </a>
-      </div>
-      <div class="col-md-5 header-middle">
-        <img src="assets/images/search-icon.png" alt="">
-        <input type="text" placeholder="Search your destinations here..." />
-      </div>
-      <div class="col-md-4 header-right">
-        <div class="header-right-details">
-          <img src="assets/images/email.png" alt="">
-          <p>contact@travelworld.com</p>
-        </div>
-        <div class="header-right-details" style="margin-top:4%;">
-          <img src="assets/images/user-icon.png" alt="">
-          <p>Login / Sign Up</p>
-        </div>
-        <div class="header-right-details">
-          <img src="assets/images/phone-icon.png" alt="">
-          <p>8110 811 82 82</p>
+        <div class="header-right">
+          <div class="header-right-details">
+            <img src="assets/images/user-icon.png" alt="" />
+            <p>Login / Sign Up</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- //banner-links -->
-    <div class="homepage-banne">
-      <div class="banner-links package-banner-links">
-        <a href=''>Hotels</a>
-        <a href=''>Flights</a>
-        <a href=''>Flights + Hotel</a>
-        <a href=''>Self Catering</a>
-        <a href=''>Cruises</a>
-        <a href=''>Car Rental</a>
-        <a href=''>Locations</a>
-        <a href=''>Hot Deals</a>
-        <a href=''>Pages</a>
-        <a href=''>Contact</a>
-        <a href=''>Blog</a>
-        <a href=''>Purchase</a>
+      <!-- //banner-links -->
+      <div class="homepage-banne">
+        <div class="banner-links package-banner-links">
+          <div class="dropdown ">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              First Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="dropdown ">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Second Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="dropdown ">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Third Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-
-   <div class="booking-section">
-
+      <div class="booking-section">
         <div class="row booking-row">
-            <img src="assets/images/back-arrow.svg" alt="ddeded">
-            <h4>My Bookings</h4>
+          <img src="assets/images/back-arrow.svg" alt="ddeded" />
+          <h4>My Bookings</h4>
         </div>
 
         <div class="row booking-actions-row">
-           
-            <select name="" id="">
-                <option value="">360 Days</option>
-            </select>
+          <select name="" id="">
+            <option value="">360 Days</option>
+          </select>
 
-            <select name="" id="">
-                <option value="">All</option>
-            </select>
+          <select name="" id="">
+            <option value="">All</option>
+          </select>
 
-            <select name="" id="">
-                <option value="">Future</option>
-            </select>
+          <select name="" id="">
+            <option value="">Future</option>
+          </select>
 
-            <select name="" id="">
-                <option value="">Passenger Name</option>
-            </select>
+          <select name="" id="">
+            <option value="">Passenger Name</option>
+          </select>
 
-            <select name="" id="">
-                <option value="">Containing</option>
-            </select>
+          <select name="" id="">
+            <option value="">Containing</option>
+          </select>
 
-            <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search" />
 
-            <button class="booking-details-btn">Go</button>
+          <button class="booking-details-btn">Go</button>
         </div>
-        
- 
-    <div style="overflow: auto;"> 
 
-  
+        <div style="overflow: auto">
+          <table class="table booking-table">
+            <thead>
+              <tr class="booking-table-rows">
+                <th></th>
+                <th scope="col">
+                  <p>Res. #</p>
+                </th>
+                <th scope="col">
+                  <p>Agent</p>
+                </th>
+                <th scope="col">
+                  <p>Ref. #</p>
+                </th>
+                <th scope="col">
+                  <p>Pax Name</p>
+                </th>
+                <th scope="col">
+                  <p>Status</p>
+                </th>
+                <th scope="col">
+                  <p>Amount (AED)</p>
+                </th>
+                <th scope="col">
+                  <p>View</p>
+                </th>
+                <th scope="col">
+                  <p>Voucher</p>
+                </th>
+                <th scope="col">
+                  <p>Invoice</p>
+                </th>
+              </tr>
+            </thead>
 
-      <table class="table booking-table">
-        <thead>
-          <tr class="booking-table-rows">
-            <th></th>
-            <th scope="col">
-             <p>Res. #</p> 
-            </th>
-            <th scope="col">
-             <p>Agent</p> 
-            </th>
-            <th scope="col">
-            <p>Ref. # </p>  
-            </th>
-            <th scope="col">
-             <p>Pax Name</p> 
-            </th>
-            <th scope="col">
-              <p>Status</p> 
-            </th>
-            <th scope="col">
-               <p>Amount (AED)</p>
-            </th>
-            <th scope="col">
-             <p>View</p> 
-            </th>
-            <th scope="col">
-             <p>Voucher</p> 
-            </th>
-            <th scope="col">
-              <p>Invoice</p> 
-            </th>
-          </tr>
-        </thead>
-
-        
-        <tbody>
-          <tr class="booking-table-rows">
-              <td scope="row" class="add-toggle">
+            <tbody>
+              <tr class="booking-table-rows">
+                <td scope="row" class="add-toggle">
                   <div class="table-titles add-icon">
-                      <img src="assets/images/add-icon.svg" alt="">
+                    <img src="assets/images/add-icon.svg" alt="" />
                   </div>
-              </td>
-              <td>
-                <p class="table-datas">5</p>
-              </td>
-              <td>
-                  <p>HEMANT</p>
-              </td>
-              <td>
-                  <p>0</p>
-              </td>
-              <td><p>MR. ASAD KHAN</p></td>
-              <td class="status-confirm"><p>CONFIRMED</p> </td>
-              <td><p>98.81</p> </td>
-              <td>
-                 <p>
-                  <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-                 </p> 
-              </td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon material-local-offer.svg" alt="">
-                </p>
-              </td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-                </p>
-              </td>
-          </tr>
-
-          <tr class="booking-table-rows toggle-rows toggle-heads">
-              <td scope="row" class="toggle-heads" colspan="4">
-               Service Details 
-              </td>
+                </td>
                 <td>
-                <p>Status</p>  
+                  <p class="table-datas">5</p>
+                </td>
+                <td>
+                  <p>HEMANT</p>
+                </td>
+                <td>
+                  <p>0</p>
+                </td>
+                <td><p>MR. ASAD KHAN</p></td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  booking-table-rows
+                  toggle-rows toggle-heads toggle-headings
+                "
+              >
+                <td scope="row" class="toggle-heads" colspan="4">
+                  Service Details
+                </td>
+                <td>
+                  <p>Status</p>
                 </td>
                 <td><p>Amount (AED)</p></td>
                 <td><p>View</p></td>
                 <td><p>SV</p></td>
                 <td><p>Cancel</p></td>
                 <td><p>PI</p></td>
-          </tr>
-          <tr class="booking-table-rows toggle-rows">
-              <td scope="row" colspan="4" class="toggle-heads">
-                
-                   LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom, Private Bathroom,
-                   1 Double Bedroom - 1(1.0)
-                 
-              </td>
-              <td class="status-confirm"><p>CONFIRMED</p></td>
-              <td><p>98.81</p></td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-                </p>
-              </td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon material-local-offer.svg" alt="">
-                </p>
-              </td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon material-delete.svg" alt="">
-                </p>
-              </td>
-              <td>
-                <p>
-                  <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-                </p>
-              </td>
-          </tr>
-      </tbody>
+              </tr>
+              <tr class="booking-table-rows toggle-rows">
+                <td scope="row" colspan="4" class="toggle-heads">
+                  LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom,
+                  Private Bathroom, 1 Double Bedroom - 1(1.0)
+                </td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon material-delete.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
+            </tbody>
 
-      <tbody>
-        <tr class="booking-table-rows">
-            <td scope="row" class="add-toggle">
-                <div class="table-titles add-icon">
-                    <img src="assets/images/add-icon.svg" alt="">
-                </div>
-            </td>
-            <td>
-              <p class="table-datas">5</p>
-            </td>
-            <td>
-                <p>HEMANT</p>
-            </td>
-            <td>
-                <p>0</p>
-            </td>
-            <td><p>MR. ASAD KHAN</p></td>
-            <td class="status-confirm"><p>CONFIRMED</p> </td>
-            <td><p>98.81</p> </td>
-            <td>
-               <p>
-                <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-               </p> 
-            </td>
-            <td>
-              <p>
-                <img src="assets/images/Icon material-local-offer.svg" alt="">
-              </p>
-            </td>
-            <td>
-              <p>
-                <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-              </p>
-            </td>
-        </tr>
+            <tbody>
+              <tr class="booking-table-rows">
+                <td scope="row" class="add-toggle">
+                  <div class="table-titles add-icon">
+                    <img src="assets/images/add-icon.svg" alt="" />
+                  </div>
+                </td>
+                <td>
+                  <p class="table-datas">5</p>
+                </td>
+                <td>
+                  <p>HEMANT</p>
+                </td>
+                <td>
+                  <p>0</p>
+                </td>
+                <td><p>MR. ASAD KHAN</p></td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
 
-        <tr class="booking-table-rows toggle-rows">
-            <td scope="row" class="toggle-heads" colspan="4">
-                  Service Details 
-            </td>
-              <td>
-              <p>Status</p>  
-              </td>
-              <td><p>Amount (AED)</p></td>
-              <td><p>View</p></td>
-              <td><p>SV</p></td>
-              <td ><p>Cancel</p></td>
-              <td><p>PI</p></td>
-        </tr>
-        <tr class="booking-table-rows toggle-rows">
-            <td scope="row" colspan="4" class="toggle-heads">
-               
-                 LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom, Private Bathroom,
-                 1 Double Bedroom - 1(1.0)
-               
-            </td>
-            <td class="status-confirm"><p>CONFIRMED</p></td>
-            <td><p>98.81</p></td>
-            <td>
-              <p>
-                <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-              </p>
-            </td>
-            <td>
-              <p>
-                <img src="assets/images/Icon material-local-offer.svg" alt="">
-              </p>
-            </td>
-            <td>
-              <p>
-                <img src="assets/images/Icon material-delete.svg" alt="">
-              </p>
-            </td>
-            <td>
-              <p>
-                <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-              </p>
-            </td>
-        </tr>
-    </tbody>
+              <tr class="booking-table-rows toggle-rows toggle-headings">
+                <td scope="row" class="toggle-heads" colspan="4">
+                  Service Details
+                </td>
+                <td>
+                  <p>Status</p>
+                </td>
+                <td><p>Amount (AED)</p></td>
+                <td><p>View</p></td>
+                <td><p>SV</p></td>
+                <td><p>Cancel</p></td>
+                <td><p>PI</p></td>
+              </tr>
+              <tr class="booking-table-rows toggle-rows">
+                <td scope="row" colspan="4" class="toggle-heads">
+                  LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom,
+                  Private Bathroom, 1 Double Bedroom - 1(1.0)
+                </td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon material-delete.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
+            </tbody>
 
-    <tbody>
-      <tr class="booking-table-rows">
-          <td scope="row" class="add-toggle">
-              <div class="table-titles add-icon">
-                  <img src="assets/images/add-icon.svg" alt="">
-              </div>
-          </td>
-          <td>
-            <p class="table-datas">5</p>
-          </td>
-          <td>
-              <p>HEMANT</p>
-          </td>
-          <td>
-              <p>0</p>
-          </td>
-          <td><p>MR. ASAD KHAN</p></td>
-          <td class="status-confirm"><p>CONFIRMED</p> </td>
-          <td><p>98.81</p> </td>
-          <td>
-             <p>
-              <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-             </p> 
-          </td>
-          <td>
-            <p>
-              <img src="assets/images/Icon material-local-offer.svg" alt="">
-            </p>
-          </td>
-          <td>
-            <p>
-              <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-            </p>
-          </td>
-      </tr>
+            <tbody>
+              <tr class="booking-table-rows">
+                <td scope="row" class="add-toggle">
+                  <div class="table-titles add-icon">
+                    <img src="assets/images/add-icon.svg" alt="" />
+                  </div>
+                </td>
+                <td>
+                  <p class="table-datas">5</p>
+                </td>
+                <td>
+                  <p>HEMANT</p>
+                </td>
+                <td>
+                  <p>0</p>
+                </td>
+                <td><p>MR. ASAD KHAN</p></td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
 
-      <tr class="booking-table-rows toggle-rows">
-          <td scope="row" class="toggle-heads" colspan="4">
-           Service Details 
-          </td>
-            <td>
-            <p>Status</p>  
-            </td>
-            <td><p>Amount (AED)</p></td>
-            <td><p>View</p></td>
-            <td><p>SV</p></td>
-            <td ><p>Cancel</p></td>
-            <td><p>PI</p></td>
-      </tr>
-      <tr class="booking-table-rows toggle-rows">
-          <td scope="row" colspan="4" class="toggle-heads">
-             
-               LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom, Private Bathroom,
-               1 Double Bedroom - 1(1.0)
-             
-          </td>
-          <td class="status-confirm"><p>CONFIRMED</p></td>
-          <td><p>98.81</p></td>
-          <td>
-            <p>
-              <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-            </p>
-          </td>
-          <td>
-            <p>
-              <img src="assets/images/Icon material-local-offer.svg" alt="">
-            </p>
-          </td>
-          <td>
-            <p>
-              <img src="assets/images/Icon material-delete.svg" alt="">
-            </p>
-          </td>
-          <td>
-            <p>
-              <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-            </p>
-          </td>
-      </tr>
-  </tbody>
+              <tr class="booking-table-rows toggle-rows toggle-headings">
+                <td scope="row" class="toggle-heads" colspan="4">
+                  Service Details
+                </td>
+                <td>
+                  <p>Status</p>
+                </td>
+                <td><p>Amount (AED)</p></td>
+                <td><p>View</p></td>
+                <td><p>SV</p></td>
+                <td><p>Cancel</p></td>
+                <td><p>PI</p></td>
+              </tr>
+              <tr class="booking-table-rows toggle-rows">
+                <td scope="row" colspan="4" class="toggle-heads">
+                  LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom,
+                  Private Bathroom, 1 Double Bedroom - 1(1.0)
+                </td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon material-delete.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
+            </tbody>
 
-  <tbody>
-    <tr class="booking-table-rows">
-        <td scope="row" class="add-toggle">
-            <div class="table-titles add-icon">
-                <img src="assets/images/add-icon.svg" alt="">
-            </div>
-        </td>
-        <td>
-          <p class="table-datas">5</p>
-        </td>
-        <td>
-            <p>HEMANT</p>
-        </td>
-        <td>
-            <p>0</p>
-        </td>
-        <td><p>MR. ASAD KHAN</p></td>
-        <td class="status-confirm"><p>CONFIRMED</p> </td>
-        <td><p>98.81</p> </td>
-        <td>
-           <p>
-            <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-           </p> 
-        </td>
-        <td>
-          <p>
-            <img src="assets/images/Icon material-local-offer.svg" alt="">
-          </p>
-        </td>
-        <td>
-          <p>
-            <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-          </p>
-        </td>
-    </tr>
+            <tbody>
+              <tr class="booking-table-rows">
+                <td scope="row" class="add-toggle">
+                  <div class="table-titles add-icon">
+                    <img src="assets/images/add-icon.svg" alt="" />
+                  </div>
+                </td>
+                <td>
+                  <p class="table-datas">5</p>
+                </td>
+                <td>
+                  <p>HEMANT</p>
+                </td>
+                <td>
+                  <p>0</p>
+                </td>
+                <td><p>MR. ASAD KHAN</p></td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
 
-    <tr class="booking-table-rows toggle-rows">
-        <td scope="row" class="toggle-heads" colspan="4">
-          Service Details 
-        </td>
-          <td>
-          <p>Status</p>  
-          </td>
-          <td><p>Amount (AED)</p></td>
-          <td><p>View</p></td>
-          <td><p>SV</p></td>
-          <td ><p>Cancel</p></td>
-          <td><p>PI</p></td>
-    </tr>
-    <tr class="booking-table-rows toggle-rows">
-        <td scope="row" colspan="4" class="toggle-heads">
-           
-             LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom, Private Bathroom,
-             1 Double Bedroom - 1(1.0)
-           
-        </td>
-        <td class="status-confirm"><p>CONFIRMED</p></td>
-        <td><p>98.81</p></td>
-        <td>
-          <p>
-            <img src="assets/images/Icon ionic-md-eye.svg" alt="">
-          </p>
-        </td>
-        <td>
-          <p>
-            <img src="assets/images/Icon material-local-offer.svg" alt="">
-          </p>
-        </td>
-        <td>
-          <p>
-            <img src="assets/images/Icon material-delete.svg" alt="">
-          </p>
-        </td>
-        <td>
-          <p>
-            <img src="assets/images/Icon awesome-file-invoice.svg" alt="">
-          </p>
-        </td>
-      </tr>
-    </tbody>       
-</table>
-
-       <nav  aria-label="Page navigation example">
+              <tr class="booking-table-rows toggle-rows toggle-headings">
+                <td scope="row" class="toggle-heads" colspan="4">
+                  Service Details
+                </td>
+                <td>
+                  <p>Status</p>
+                </td>
+                <td><p>Amount (AED)</p></td>
+                <td><p>View</p></td>
+                <td><p>SV</p></td>
+                <td><p>Cancel</p></td>
+                <td><p>PI</p></td>
+              </tr>
+              <tr class="booking-table-rows toggle-rows">
+                <td scope="row" colspan="4" class="toggle-heads">
+                  LE MERIDIAN - (Hotel Service) Standard Room, 1 Bedroom,
+                  Private Bathroom, 1 Double Bedroom - 1(1.0)
+                </td>
+                <td class="status-confirm"><p>CONFIRMED</p></td>
+                <td><p>98.81</p></td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon ionic-md-eye.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon material-local-offer.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img src="assets/images/Icon material-delete.svg" alt="" />
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <img
+                      src="assets/images/Icon awesome-file-invoice.svg"
+                      alt=""
+                    />
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav aria-label="Page navigation example">
           <ul class="pagination booking-pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
-      </nav>
-
+        </nav>
       </div>
+
+      <!-- //footer-section -->
+      <footer class="footer-container">
+        <div class="row footer-top-row">
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Book Your Travel</h5>
+            <p class="footer-details-desc">
+              1400 PennsylSUVia Ave. Washington, DC <br />
+              <span>P:</span>24/7 customer support: 1-555-555-5555 <br />
+              <span>E:</span>booking@gmail.com
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Customer Support</h5>
+            <ul class="footer-details">
+              <li>Faq</li>
+              <li>How do I make a reservation</li>
+              <li>Payment Options</li>
+              <li>Booking Tips</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Follow Us</h5>
+            <div class="social-icons">
+              <i class="fab fa-facebook footer-icon"></i>
+              <i class="fab fa-youtube footer-icon"></i>
+              <i class="fab fa-google-plus-g footer-icon"></i>
+              <i class="fab fa-linkedin footer-icon"></i>
+              <i class="fab fa-pinterest-square footer-icon"></i>
+              <i class="fab fa-twitter-square footer-icon"></i>
+              <i class="fab fa-vimeo-v footer-icon"></i>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Don't miss our exclusive offers</h5>
+            <div class="footer-signup-sec">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Enter your email here"
+              />
+              <button class="footer-btn form-control">SIGNUP</button>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-bottom-row">
+          <div class="col-md-4 col-lg-4">
+            <p>Copyright 2016 Book your travel LTD. All rights reserved</p>
+          </div>
+          <div class="col-md-8 col-lg-8">
+            <div class="footer-links">
+              <a href="">About Us</a> | <a href="">Contact</a> |
+              <a href="">Partners</a> | <a href="">Customer Service</a>|
+              <a href="">FAQ</a>| <a href="">Careers</a>|
+              <a href="">Terms & Conditions</a>|
+              <a href="">Privacy Statament</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/priceFilter.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/all.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
-
-
-    <!-- //footer-section -->
-    <footer class="footer-container">
-      <div class="row footer-top-row">
-        <div class="col-md-3 col-lg-3">
-          <h5 class="footer-titles">
-            Book Your Travel
-          </h5>
-          <p class="footer-details-desc">
-            1400 PennsylSUVia Ave. Washington, DC <br>
-            <span>P:</span>24/7 customer support: 1-555-555-5555 <br>
-            <span>E:</span>booking@gmail.com
-          </p>
-        </div>
-
-        <div class="col-md-3 col-lg-3">
-          <h5 class="footer-titles">Customer Support</h5>
-          <ul class="footer-details">
-            <li>Faq</li>
-            <li>How do I make a reservation</li>
-            <li>Payment Options</li>
-            <li>Booking Tips</li>
-          </ul>
-        </div>
-
-        <div class="col-md-3 col-lg-3">
-          <h5 class="footer-titles">Follow Us</h5>
-          <div class="social-icons">
-            <i class="fab fa-facebook footer-icon"></i>
-            <i class="fab fa-youtube footer-icon"></i>
-            <i class="fab fa-google-plus-g footer-icon"></i>
-            <i class="fab fa-linkedin footer-icon"></i>
-            <i class="fab fa-pinterest-square footer-icon"></i>
-            <i class="fab fa-twitter-square footer-icon"></i>
-            <i class="fab fa-vimeo-v footer-icon"></i>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-lg-3">
-          <h5 class="footer-titles">Don't miss our exclusive offers </h5>
-          <div class="footer-signup-sec">
-            <input class="footer-input" type="text" placeholder="Enter your email here">
-            <button class="footer-btn form-control">SIGNUP</button>
-          </div>
-
-        </div>
-      </div>
-      <div class="row footer-bottom-row">
-        <div class="col-md-4 col-lg-4">
-          <p>Copyright 2016 Book your travel LTD. All rights reserved</p>
-        </div>
-        <div class="col-md-8 col-lg-8">
-          <div class="footer-links">
-            <a href="">About Us</a> |
-            <a href="">Contact</a> |
-            <a href="">Partners</a> |
-            <a href="">Customer Service</a>|
-            <a href="">FAQ</a>|
-            <a href="">Careers</a>|
-            <a href="">Terms & Conditions</a>|
-            <a href="">Privacy Statament</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-  
-
-  <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/priceFilter.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script defer src="assets/js/all.js"></script>
-  <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
-
-  <script>
-    $(document).ready(function () {
-      $("#advanced-fields").hide();
-    });
-
-    $("#advanced").click(function () {
-      $("#advanced-fields").toggle().slow();
-    });
-
-  </script>
-
-<script>
-
-  $(document).ready(function () {
-
-      $(".add-toggle").click(function () {
-
-          $(this).parent().parent().find(".toggle-rows").toggle("slow");
-
+    <script>
+      $(document).ready(function () {
+        $("#advanced-fields").hide();
       });
 
-  });
+      $("#advanced").click(function () {
+        $("#advanced-fields").toggle().slow();
+      });
+    </script>
 
-</script>
-
-  
-
-
-
-</body>
-
+    <script>
+      $(document).ready(function () {
+        $(".add-toggle").click(function () {
+          $(this).parent().parent().find(".toggle-rows").toggle("slow");
+        });
+      });
+    </script>
+  </body>
 </html>

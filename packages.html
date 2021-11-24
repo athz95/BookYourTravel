@@ -1,852 +1,1056 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BookYourTravel</title>
     <!--styles links-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-family.css">
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
-  
-      
-</head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-family.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="assets/owl-carousel/css/owl.carousel.min.css"
+    />
+  </head>
 
-<body>
-   <div class="container">
-       <!-- //header -->
-       <div class="row header-row">
-           <div class="col-md-3 header-logo">
-               <a href="homepage.html">
-                 <img src="assets/images/logo.png" alt="logo">
-               </a>
-           </div>
-           <div class="col-md-5 header-middle">
-               <img src="assets/images/search-icon.png" alt="">
-               <input type="text" placeholder="Search your destinations here..." />
-           </div>
-           <div class="col-md-4 header-right">
-                <div class="header-right-details">
-                    <img src="assets/images/email.png" alt="">
-                    <p>contact@travelworld.com</p>
-                </div>
-                <div class="header-right-details" style="padding-top:6%;">
-                    <img src="assets/images/user-icon.png" alt="">
-                    <p>Login / Sign Up</p>
-                </div>
-                <div class="header-right-details" >
-                    <img src="assets/images/phone-icon.png" alt="">
-                    <p>8110 811 82 82</p>
-                </div>           
-           </div>
-       </div>
+  <body>
+    <div class="container">
+      <!-- //header -->
+      <div class="row header-row">
+        <div class="header-logo">
+          <a href="homepage.html">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
 
-       <!-- //banner-links -->
-      <div class="homepage-banne">
-          <div class="banner-links package-banner-links">
-              <a href=''>Hotels</a>
-              <a href=''>Flights</a>
-              <a href=''>Flights + Hotel</a>
-              <a href=''>Self Catering</a>
-              <a href=''>Cruises</a>
-              <a href=''>Car Rental</a>
-              <a href=''>Locations</a>
-              <a href=''>Hot Deals</a>
-              <a href=''>Pages</a>
-              <a href=''>Contact</a>
-              <a href=''>Blog</a>
-              <a href=''>Purchase</a>
+        <div class="header-right">
+          <div class="header-right-details">
+            <img src="assets/images/user-icon.png" alt="" />
+            <p>Login / Sign Up</p>
           </div>
+        </div>
       </div>
 
-
-    
-    <div class="tab-fields package-fields">
-        
-        <div class="fields-row package-fields-row">
-            <img class="back-icon" src="assets/images/back-icon.png" alt="">
-            <div class="fields package-fields">
-                <label for="input" > Destination</label> <br>
-                <input type="text" placeholder="Enter Your City">
+      <!-- //banner-links -->
+      <div class="homepage-banne">
+        <div class="banner-links package-banner-links">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              First Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-            <div class="package-fields fields">
-                <label for="input"> Star Rating</label> <br>
-                <select placeholder="5 Star">
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Second Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Third Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-fields package-fields">
+        <!-- Large modal -->
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <i class="far fa-times-circle close-button"></i>
+
+            <div class="modify-search-container">
+              <div class="fields-row package-fields-row" id="advanced-fields-1">
+                <div class="fields package-fields">
+                  <label for="input"> Destination</label> <br />
+                  <input type="text" placeholder="Enter Your City" />
+                </div>
+                <div class="package-fields fields">
+                  <label for="input"> Star Rating</label> <br />
+                  <select placeholder="5 Star">
                     <option value="">5 Star</option>
                     <option value="">4 Star</option>
                     <option value="">3 Star</option>
                     <option value="">2 Star</option>
                     <option value="">1 Star</option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input">Check In  </label> <br>
-                    <input type="date">
-            </div>
-            <div class="fields package-fields">
-                <label for="input"> Check Out</label> <br>
-                <input type="date">
-            </div>
-            <div class="fields package-fields package-buttons">
-                <button class="booking-btn-submit form-control">Submit</button>
-                <button class="booking-btn-reset form-control">Reset</button>
-            </div>
-        </div>
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input">Check In </label> <br />
+                  <input
+                    type="text"
+                    placeholder="Date"
+                    name="date"
+                    id="date"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="fields package-fields">
+                  <label for="input"> Check Out</label> <br />
+                  <input
+                    type="text"
+                    placeholder="Date"
+                    name="date"
+                    id="date2"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="fields package-fields package-buttons">
+                  <button class="booking-btn-submit form-control">
+                    Submit
+                  </button>
+                  <button class="booking-btn-reset form-control">Reset</button>
+                </div>
+              </div>
 
-        <div class="fields-row" id="advanced-fields">
-            <div class="fields package-fields">
-                <label for="input"> Natinality</label> <br>
-                <select >
+              <div class="fields-row package-fields-row" id="advanced-fields">
+                <div class="fields package-fields">
+                  <label for="input"> Natinality</label> <br />
+                  <select>
                     <option value="">Emirati</option>
                     <option value="">Indian</option>
                     <option value="">Arab</option>
                     <option value="">Portugese</option>
                     <option value="">Europe</option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input"> Currency</label> <br>
-                <select >
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input"> Currency</label> <br />
+                  <select>
                     <option value="">AED</option>
                     <option value="">USD</option>
                     <option value="">INR</option>
                     <option value="">DNR</option>
                     <option value=""></option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input"> Nights</label> <br>
-                <select >
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input"> Nights</label> <br />
+                  <select>
                     <option value="">5 Star</option>
                     <option value="">4 Star</option>
                     <option value="">3 Star</option>
                     <option value="">2 Star</option>
                     <option value="">1 Star</option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input"> Room occupancy</label> <br>
-                <select >
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input"> Room occupancy</label> <br />
+                  <select>
                     <option value="">5</option>
-                    <option value="">4 </option>
-                    <option value="">3 </option>
-                    <option value="">2 </option>
-                    <option value="">1 </option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input">No of Adults</label> <br>
-                <select >
-                    <option value="">5 </option>
-                    <option value="">4 </option>
-                    <option value="">3 </option>
-                    <option value="">2 </option>
-                    <option value="">1 </option>
-                </select>
-            </div>
-            <div class="fields package-fields">
-                <label for="input">No of Childs</label> <br>
-                <select >
-                    <option value="">5 </option>
-                    <option value="">4 </option>
-                    <option value="">3 </option>
+                    <option value="">4</option>
+                    <option value="">3</option>
                     <option value="">2</option>
-                    <option value="">1 </option>
-                </select>
+                    <option value="">1</option>
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input">No of Adults</label> <br />
+                  <select>
+                    <option value="">5</option>
+                    <option value="">4</option>
+                    <option value="">3</option>
+                    <option value="">2</option>
+                    <option value="">1</option>
+                  </select>
+                </div>
+                <div class="fields package-fields">
+                  <label for="input">No of Childs</label> <br />
+                  <select>
+                    <option value="">5</option>
+                    <option value="">4</option>
+                    <option value="">3</option>
+                    <option value="">2</option>
+                    <option value="">1</option>
+                  </select>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <h6 id="advanced" class="package-adv-search">Advanced Search <img src="assets/images/search-down.png" alt=""></h6>
-        
-    </div>
-      
-    <div class="package-container">
+
+        <h6 id="advanced" class="package-adv-search">
+          Your Search:
+          <span
+            >Dubai,United Arab Emirates(1 Night) | Wednessday, 8th Dec -
+            Thursday, 9th Dec |1 Room , 2 Adults</span
+          >
+          <button
+            class="modify-btn"
+            data-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Modify Search
+          </button>
+        </h6>
+      </div>
+
+      <div class="package-container">
         <div class="package-main">
-            <div class="sidebar-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="sidebar-sec">
-                <button class="map-btn"><img src="assets/images/location.svg" alt=""> View on Map</button>
-
-                <div class="sidebar-box">
-                    <div class="side-box-top">
-                        <h5>Filter your search</h5>
-                        <button class="side-reset-btn">Reset</button>
-                    </div>
-                    <hr>
-                    <div class="sidebar-box-input">
-                        <img  src="assets/images/pin.png" alt="">
-                        <input class="side-box-input" type="text" placeholder="Search by hotel name">
-                    </div>
-                    <div class="sidebar-box-input">
-                        <img src="assets/images/bed-dark-icon.png" alt="">
-                        <input class="side-box-input" type="text" placeholder="Search by location">
-                    </div>
-
-                    <hr>
-
-                     <h5 class="sidebox-titles">Price</h5>
-                     <div class="container-price">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div id="slider-range"></div>
-                          </div>
-                        </div>
-                        <div class="row slider-labels">
-                          <div class="col-xs-6 caption">
-                             <span id="slider-range-value1"></span>
-                          </div>
-                          <div class="col-xs-6 text-right caption">
-                             <span id="slider-range-value2"></span>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <form>
-                              <input type="hidden" name="min-value" value="">
-                              <input type="hidden" name="max-value" value="">
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-
-                      <hr>
-
-                      <h5 class="sidebox-titles">Star Rating</h5>
-                      <div class="rating-section">
-                          <div class="rating-box">
-                              <div class="rating-box-left">
-                                <input type="checkbox" >
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                
-                              </div>
-                              <div class="rating-box-right">
-                                  <p>29</p>
-                              </div>
-                          </div>
-
-                          <div class="rating-box">
-                            <div class="rating-box-left">
-                              <input type="checkbox" >
-                              <div class="rating-stars">
-                                 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                              </div>
-                              
-                            </div>
-                            <div class="rating-box-right">
-                                <p>31</p>
-                            </div>
-                        </div>
-
-                        <div class="rating-box">
-                            <div class="rating-box-left">
-                              <input type="checkbox" >
-                              <div class="rating-stars">
-                                 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                              </div>
-                              
-                            </div>
-                            <div class="rating-box-right">
-                                <p>19</p>
-                            </div>
-                        </div>
-
-                        <div class="rating-box">
-                            <div class="rating-box-left">
-                              <input type="checkbox" >
-                              <div class="rating-stars">
-                               
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                              </div>
-                              
-                            </div>
-                            <div class="rating-box-right">
-                                <p>35</p>
-                            </div>
-                        </div>
-
-                        <div class="rating-box">
-                            <div class="rating-box-left">
-                              <input type="checkbox">
-                              <div class="rating-stars">
-                                  <i class="fas fa-star"></i>
-                              </div>
-                              
-                            </div>
-                            <div class="rating-box-right">
-                                <p>02</p>
-                            </div>
-                        </div>
-
-                        <div class="rating-box">
-                            <div class="rating-box-left">
-                              <input type="checkbox" >
-                                <p>No Ratings</p>
-                            </div>
-                            <div class="rating-box-right">
-                                <p>0</p>
-                            </div>
-                        </div>
-                      </div>
-                      <hr>
-
-                      <div class="hotel-names">
-                          <h5 class="sidebox-titles">Hotel Chain</h5>
-                          <div class="rating-box-left-names">
-                            <input type="checkbox" >
-                              <p>Hyatt</p>
-                          </div>
-                          <div class="rating-box-left-names">
-                            <input type="checkbox" >
-                              <p>Mariott</p>
-                          </div>
-                          <div class="rating-box-left-names">
-                            <input type="checkbox" >
-                              <p>Accord</p>
-                          </div>
-
-                          <div class="rating-box-left-names">
-                            <input type="checkbox" >
-                              <p>Grand</p>
-                          </div>
-                          <div class="rating-box-left-names">
-                            <input type="checkbox" >
-                              <p>Taj</p>
-                          </div>
-                      </div>
-                      <hr>
-
-                      <h6 class="sidebox-end"><img src="assets/images/hand-icon.png" alt=""> Trip Adviser</h6>
-                </div>
-            </div>
-
-            <div class="package-boxes">
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-main.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>PARIS DELIGHT OF CAMDON</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-2.png" alt="">
-                    </div>
-                    
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>LE MERIDIAN HOTEL</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                              <img src="assets/images/p-5.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-3.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>THE INDIAN TAJ</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-main.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>PARIS DELIGHT OF CAMDON</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                           
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-2.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>LE MERIDIAN HOTEL</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                              <img src="assets/images/p-5.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-3.png" alt="">
-                    </div>
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>THE INDIAN TAJ</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                             
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-main.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>PARIS DELIGHT OF CAMDON</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-2.png" alt="">
-                    </div>
-                    <img class="package-offer-tag" src="assets/images/offer-tag.png" alt="">
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>LE MERIDIAN HOTEL</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-                <div class="package-box row">
-                    <div class="package-box-left col-md-2">
-                        <img src="assets/images/package-img-3.png" alt="">
-                    </div>
-
-                    <div class="package-box-middle col-md-7">
-                        <h3>THE INDIAN TAJ</h3>
-                        <div class="package-middle-sec">
-                            <div class="rating-stars package-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4><img class="location-pin" src="assets/images/pin.png" alt=""> Location</h4>
-                        </div>
-
-                        <div class="package-middle-reviews">
-                            <div class="rating-circle">
-                                <i class="fas fa-star"></i>
-                                <p class="rating-count">9.2</p>
-                            </div>
-
-                            <p class="rating-reviews">(311 Reviews)</p>
-                        </div>
-                       
-                        <p class="package-desc"> 
-                            Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum,
-                        </p>
-                    </div>
-
-                    <div class="package-box-right col-md-3">
-                          <div class="package-right-top">
-                              <img src="assets/images/p1.png" alt="">
-                              <img src="assets/images/p2.png" alt="">
-                              <img src="assets/images/p3.png" alt="">
-                              <img src="assets/images/p4.png" alt="">
-                          </div>
-                          <h5 class="package-price">$860.00</h5>
-                          <button class="package-btn"> VIEW DEALS</button>
-                    </div>
-                </div>
-
-               
-
-            </div>
-        </div>
-    </div>
-
-               
-            
-      
-      
-
-
-
-<!-- //footer-section -->
-    <footer class="footer-container">
-        <div class="row footer-top-row">
-            <div class="col-md-3 col-lg-3">
-                  <h5 class="footer-titles">
-                      Book Your Travel
-                  </h5>
-                  <p class="footer-details-desc">
-                      1400 PennsylSUVia Ave. Washington, DC <br>
-                      <span>P:</span>24/7 customer support: 1-555-555-5555 <br>
-                      <span>E:</span>booking@gmail.com
-                  </p>
-            </div>
-
-            <div class="col-md-3 col-lg-3">
-                  <h5 class="footer-titles">Customer Support</h5>
-                  <ul class="footer-details">
-                      <li>Faq</li>
-                      <li>How do I make a reservation</li>
-                      <li>Payment Options</li>
-                      <li>Booking Tips</li>
-                  </ul>
-            </div>
-
-            <div class="col-md-3 col-lg-3">
-                  <h5 class="footer-titles">Follow Us</h5>
-                   <div class="social-icons">
-                        <i class="fab fa-facebook footer-icon"></i>
-                        <i class="fab fa-youtube footer-icon"></i>
-                        <i class="fab fa-google-plus-g footer-icon"></i>
-                        <i class="fab fa-linkedin footer-icon"></i>
-                        <i class="fab fa-pinterest-square footer-icon"></i>
-                        <i class="fab fa-twitter-square footer-icon"></i>
-                        <i class="fab fa-vimeo-v footer-icon"></i>
-                   </div>
-            </div>
-
-            <div class="col-md-3 col-lg-3">
-                  <h5 class="footer-titles">Don't miss our exclusive offers </h5>
-                  <div class="footer-signup-sec">
-                    <input class="footer-input" type="text" placeholder="Enter your email here">
-                    <button class="footer-btn form-control">SIGNUP</button> 
+          <div class="sidebar-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="sidebar-sec">
+            <button class="map-btn">
+              <img src="assets/images/location.svg" alt="" /> View on Map
+            </button>
+
+            <div class="sidebar-box">
+              <div class="side-box-top">
+                <h5>Filter your search</h5>
+                <button class="side-reset-btn">Reset</button>
+              </div>
+              <hr />
+              <div class="sidebar-box-input">
+                <img src="assets/images/pin.png" alt="" />
+                <input
+                  class="side-box-input"
+                  type="text"
+                  placeholder="Search by hotel name"
+                />
+              </div>
+              <div class="sidebar-box-input">
+                <img src="assets/images/bed-dark-icon.png" alt="" />
+                <input
+                  class="side-box-input"
+                  type="text"
+                  placeholder="Search by location"
+                />
+              </div>
+
+              <hr />
+
+              <div class="sidebar-head-box">
+                <h5 class="sidebox-titles">Price</h5>
+                <i class="fas fa-caret-down"></i>
+              </div>
+
+              <div class="container-price">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="slider-range"></div>
                   </div>
-                  
+                </div>
+                <div class="row slider-labels">
+                  <div class="col-xs-6 caption">
+                    <span id="slider-range-value1"></span>
+                  </div>
+                  <div class="col-xs-6 text-right caption">
+                    <span id="slider-range-value2"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <form>
+                      <input type="hidden" name="min-value" value="" />
+                      <input type="hidden" name="max-value" value="" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="sidebar-head-rating">
+                <h5 class="rating-title">Star Rating</h5>
+                <i class="fas fa-caret-down"></i>
+              </div>
+
+              <div class="rating-section">
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <div class="rating-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>29</p>
+                  </div>
+                </div>
+
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <div class="rating-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>31</p>
+                  </div>
+                </div>
+
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <div class="rating-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>19</p>
+                  </div>
+                </div>
+
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <div class="rating-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>35</p>
+                  </div>
+                </div>
+
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <div class="rating-stars">
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>02</p>
+                  </div>
+                </div>
+
+                <div class="rating-box">
+                  <div class="rating-box-left">
+                    <input type="checkbox" />
+                    <p>No Ratings</p>
+                  </div>
+                  <div class="rating-box-right">
+                    <p>0</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="sidebar-head-hotels">
+                <h5 class="hotel-chain-title">Hotel Chain</h5>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <div class="hotel-names">
+                <div class="rating-box-left-names">
+                  <input type="checkbox" />
+                  <p>Hyatt</p>
+                </div>
+                <div class="rating-box-left-names">
+                  <input type="checkbox" />
+                  <p>Mariott</p>
+                </div>
+                <div class="rating-box-left-names">
+                  <input type="checkbox" />
+                  <p>Accord</p>
+                </div>
+
+                <div class="rating-box-left-names">
+                  <input type="checkbox" />
+                  <p>Grand</p>
+                </div>
+                <div class="rating-box-left-names">
+                  <input type="checkbox" />
+                  <p>Taj</p>
+                </div>
+              </div>
+              <hr />
+
+              <h6 class="sidebox-end">
+                <img src="assets/images/hand-icon.png" alt="" /> Trip Adviser
+              </h6>
             </div>
+          </div>
+
+          <div class="package-boxes">
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-main.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>PARIS DELIGHT OF CAMDON</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-2.png" alt="" />
+              </div>
+
+              <div class="package-box-middle col-md-7">
+                <h3>LE MERIDIAN HOTEL</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                  <img src="assets/images/p-5.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-3.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>THE INDIAN TAJ</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-main.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>PARIS DELIGHT OF CAMDON</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-2.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>LE MERIDIAN HOTEL</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                  <img src="assets/images/p-5.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-3.png" alt="" />
+              </div>
+
+              <div class="package-box-middle col-md-7">
+                <h3>THE INDIAN TAJ</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem
+                  ipsum, or lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-main.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>PARIS DELIGHT OF CAMDON</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-2.png" alt="" />
+              </div>
+              <img
+                class="package-offer-tag"
+                src="assets/images/offer-tag.png"
+                alt=""
+              />
+
+              <div class="package-box-middle col-md-7">
+                <h3>LE MERIDIAN HOTEL</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+
+            <div class="package-box row">
+              <div class="package-box-left col-md-2">
+                <img src="assets/images/package-img-3.png" alt="" />
+              </div>
+
+              <div class="package-box-middle col-md-7">
+                <h3>THE INDIAN TAJ</h3>
+                <div class="package-middle-sec">
+                  <div class="rating-stars package-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>
+                    <img
+                      class="location-pin"
+                      src="assets/images/pin.png"
+                      alt=""
+                    />
+                    Location
+                  </h4>
+                </div>
+
+                <div class="package-middle-reviews">
+                  <div class="rating-circle">
+                    <i class="fas fa-star"></i>
+                    <p class="rating-count">9.2</p>
+                  </div>
+
+                  <p class="rating-reviews">(311 Reviews)</p>
+                </div>
+
+                <p class="package-desc">
+                  Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or
+                  lipsum Lorem ipsum,
+                </p>
+              </div>
+
+              <div class="package-box-right col-md-3">
+                <div class="package-right-top">
+                  <img src="assets/images/p1.png" alt="" />
+                  <img src="assets/images/p2.png" alt="" />
+                  <img src="assets/images/p3.png" alt="" />
+                  <img src="assets/images/p4.png" alt="" />
+                </div>
+                <h5 class="package-price">$860.00</h5>
+                <button class="package-btn">VIEW DEALS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //footer-section -->
+      <footer class="footer-container">
+        <div class="row footer-top-row">
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Book Your Travel</h5>
+            <p class="footer-details-desc">
+              1400 PennsylSUVia Ave. Washington, DC <br />
+              <span>P:</span>24/7 customer support: 1-555-555-5555 <br />
+              <span>E:</span>booking@gmail.com
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Customer Support</h5>
+            <ul class="footer-details">
+              <li>Faq</li>
+              <li>How do I make a reservation</li>
+              <li>Payment Options</li>
+              <li>Booking Tips</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Follow Us</h5>
+            <div class="social-icons">
+              <i class="fab fa-facebook footer-icon"></i>
+              <i class="fab fa-youtube footer-icon"></i>
+              <i class="fab fa-google-plus-g footer-icon"></i>
+              <i class="fab fa-linkedin footer-icon"></i>
+              <i class="fab fa-pinterest-square footer-icon"></i>
+              <i class="fab fa-twitter-square footer-icon"></i>
+              <i class="fab fa-vimeo-v footer-icon"></i>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <h5 class="footer-titles">Don't miss our exclusive offers</h5>
+            <div class="footer-signup-sec">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Enter your email here"
+              />
+              <button class="footer-btn form-control">SIGNUP</button>
+            </div>
+          </div>
         </div>
         <div class="row footer-bottom-row">
-            <div class="col-md-4 col-lg-4">
-                <p>Copyright 2016 Book your travel LTD. All rights reserved</p>
+          <div class="col-md-4 col-lg-4">
+            <p>Copyright 2016 Book your travel LTD. All rights reserved</p>
+          </div>
+          <div class="col-md-8 col-lg-8">
+            <div class="footer-links">
+              <a href="">About Us</a> | <a href="">Contact</a> |
+              <a href="">Partners</a> | <a href="">Customer Service</a>|
+              <a href="">FAQ</a>| <a href="">Careers</a>|
+              <a href="">Terms & Conditions</a>|
+              <a href="">Privacy Statament</a>
             </div>
-            <div class="col-md-8 col-lg-8">
-                <div class="footer-links">
-                    <a href="">About Us</a> |
-                    <a href="">Contact</a> |
-                    <a href="">Partners</a>  |
-                    <a href="">Customer Service</a>|
-                    <a href="">FAQ</a>|
-                    <a href="">Careers</a>|
-                    <a href="">Terms & Conditions</a>|
-                    <a href="">Privacy Statament</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>  
+      </footer>
+    </div>
 
-   </div>
-    
-    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/priceFilter.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script defer src="assets/js/all.js"></script>
+    <script src="assets/js/priceFilter.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
 
-
     <script>
-        $(document).ready(function(){
-            $("#advanced-fields").hide();
-        });
+      $(document).ready(function () {
+        $(".container-price").hide();
+      });
 
-        $("#advanced").click(function(){
-            $("#advanced-fields").toggle().slow();
-        });
-
+      $(".sidebar-head-box").click(function () {
+        $(".container-price").toggle().slow();
+      });
     </script>
 
     <script>
-          $(".sidebar-menu").click(function(){
-            $(".sidebar-sec").toggle().slow();
-        });
+      $(document).ready(function () {
+        $(".rating-section").hide();
+      });
+
+      $(".sidebar-head-rating").click(function () {
+        $(".rating-section").toggle().slow();
+      });
     </script>
-   
-</body>
+
+    <script>
+      $(document).ready(function () {
+        $(".hotel-names").hide();
+      });
+
+      $(".sidebar-head-hotels").click(function () {
+        $(".hotel-names").toggle().slow();
+      });
+    </script>
+
+    <script>
+      $(".sidebar-menu").click(function () {
+        $(".sidebar-sec").toggle().slow();
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#date").datepicker();
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#date2").datepicker();
+      });
+    </script>
+
+    <script>
+      $(".close-button").click(function () {
+        $(".card-body").hide();
+      });
+    </script>
+  </body>
 </html>

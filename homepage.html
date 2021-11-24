@@ -12,61 +12,69 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-    
 </head>
 
 <body>
    <div class="container">
        <!-- //header -->
        <div class="row header-row">
-           <div class="col-md-3 header-logo">
+           <div class="header-logo">
               <a href="homepage.html">
                 <img src="assets/images/logo.png" alt="logo">
               </a>
            </div>
-           <div class="col-md-5 header-middle">
-               <img src="assets/images/search-icon.png" alt="">
-               <input type="text" placeholder="Search your destinations here..." />
-           </div>
-           <div class="col-md-4 header-right">
+          
+           <div class="header-right">           
                 <div class="header-right-details">
-                    <img src="assets/images/email.png" alt="">
-                    <p>contact@travelworld.com</p>
-                </div>
-                <div class="header-right-details" style="padding-top:6%;">
                     <img src="assets/images/user-icon.png" alt="">
                     <p>Login / Sign Up</p>
                 </div>
-                <div class="header-right-details" >
-                    <img src="assets/images/phone-icon.png" alt="">
-                    <p>8110 811 82 82</p>
-                </div>
-               
            </div>
        </div>
        <!-- //banner-links -->
       <div class="homepage-banner">
-          <div class="banner-links">
-              <a href=''>Hotels</a>
-              <a href=''>Flights</a>
-              <a href=''>Flights + Hotel</a>
-              <a href=''>Self Catering</a>
-              <a href=''>Cruises</a>
-              <a href=''>Car Rental</a>
-              <a href=''>Locations</a>
-              <a href=''>Hot Deals</a>
-              <a href=''>Pages</a>
-              <a href=''>Contact</a>
-              <a href=''>Blog</a>
-              <a href=''>Purchase</a>
+         <div class="banner-links">
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                First Menu
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Flights</a>
+                <a class="dropdown-item" href="#">Flights + Hotel</a>
+                <a class="dropdown-item" href="#">Self Catering</a>
+                </div>
+            </div>
+
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Second Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Cruises</a>
+                        <a class="dropdown-item" href="#">Car Rental</a>
+                        <a class="dropdown-item" href="#">Locations</a>
+                        </div>
+                    </div>
+
+          <div class="dropdown ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Third Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Hot Deals</a>
+              <a class="dropdown-item" href="#">Pages</a>
+              <a class="dropdown-item" href="#">Blog</a>
+            </div>
           </div>
+          </div> 
+         
       </div>
 
       <div class="container">
             <div id="exTab1" class="container">	
             <ul  class="nav nav-pills tab-main">
                     <li class="homepage-tab ">
-                       <a  href="#1a" data-toggle="tab" class="active ">Hotels</a>
+                       <a  href="#1a" data-toggle="tab" class="active">Hotels</a>
                     </li>
                     <li class="homepage-tab">
                         <a href="#2a" data-toggle="tab">Excursions</a>
@@ -85,7 +93,7 @@
             <div class="tab-content clearfix">
                 <div class="tab-pane active" id="1a">
                     <div class="tab-fields">
-                        <h3>Plan Your Journey</h3>
+                       
                         <div class="fields-row">
                             <div class="fields">
                                 <label for="input"> Destination</label> <br>
@@ -103,11 +111,11 @@
                             </div>
                             <div class="fields">
                                 <label for="input">Check In  </label> <br>
-                                <input type="text" placeholder="Date" name="date" id="date">
+                                <input type="text" placeholder="Date" name="date" id="date" autocomplete="off">
                             </div>
                             <div class="fields">
                                 <label for="input"> Check Out</label> <br>
-                                <input type="text" placeholder="Date" name="date" id="date2">
+                                <input type="text" placeholder="Date" name="date" id="date2" autocomplete="off">
                             </div>
                             <div class="fields">
                                 <button class="booking-btn form-control">Search Now</button>
@@ -181,13 +189,394 @@
                     </div>
 
                 </div>
+
                 <div class="tab-pane" id="2a">
+                    <div class="tab-fields">
+                       
+                        <div class="fields-row">
+                            <div class="fields">
+                                <label for="input"> Destination</label> <br>
+                                <input type="text" placeholder="Enter Your City">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Star Rating</label> <br>
+                                <select placeholder="5 Star">
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">Check In  </label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date3">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Check Out</label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date4">
+                            </div>
+                            <div class="fields">
+                                <button class="booking-btn form-control">Search Now</button>
+                            </div>
+                        </div>
+
+                        <div class="fields-row" id="advanced-fields-2">
+                            <div class="fields">
+                                <label for="input"> Natinality</label> <br>
+                                <select >
+                                    <option value="">Emirati</option>
+                                    <option value="">Indian</option>
+                                    <option value="">Arab</option>
+                                    <option value="">Portugese</option>
+                                    <option value="">Europe</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Currency</label> <br>
+                                <select >
+                                    <option value="">AED</option>
+                                    <option value="">USD</option>
+                                    <option value="">INR</option>
+                                    <option value="">DNR</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Nights</label> <br>
+                                <select >
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Room occupancy</label> <br>
+                                <select >
+                                    <option value="">5</option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Adults</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Childs</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2</option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5 id="advanced-2">Advanced Search <img src="assets/images/search-down.png" alt=""></h5>
+                       
+                    </div>
                 </div>
                 <div class="tab-pane" id="3a">
+                    <div class="tab-fields">
+                       
+                        <div class="fields-row">
+                            <div class="fields">
+                                <label for="input"> Destination</label> <br>
+                                <input type="text" placeholder="Enter Your City">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Star Rating</label> <br>
+                                <select placeholder="5 Star">
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">Check In  </label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date5">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Check Out</label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date6">
+                            </div>
+                            <div class="fields">
+                                <button class="booking-btn form-control">Search Now</button>
+                            </div>
+                        </div>
+
+                        <div class="fields-row" id="advanced-fields-3">
+                            <div class="fields">
+                                <label for="input"> Natinality</label> <br>
+                                <select >
+                                    <option value="">Emirati</option>
+                                    <option value="">Indian</option>
+                                    <option value="">Arab</option>
+                                    <option value="">Portugese</option>
+                                    <option value="">Europe</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Currency</label> <br>
+                                <select >
+                                    <option value="">AED</option>
+                                    <option value="">USD</option>
+                                    <option value="">INR</option>
+                                    <option value="">DNR</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Nights</label> <br>
+                                <select >
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Room occupancy</label> <br>
+                                <select >
+                                    <option value="">5</option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Adults</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Childs</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2</option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5 id="advanced-3">Advanced Search <img src="assets/images/search-down.png" alt=""></h5>
+                       
+                    </div>
                 </div>
                 <div class="tab-pane" id="4a">
+                    <div class="tab-fields">
+                       
+                        <div class="fields-row">
+                            <div class="fields">
+                                <label for="input"> Destination</label> <br>
+                                <input type="text" placeholder="Enter Your City">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Star Rating</label> <br>
+                                <select placeholder="5 Star">
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">Check In  </label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date7">
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Check Out</label> <br>
+                                <input type="text" placeholder="Date" name="date" id="date8">
+                            </div>
+                            <div class="fields">
+                                <button class="booking-btn form-control">Search Now</button>
+                            </div>
+                        </div>
+
+                        <div class="fields-row" id="advanced-fields-4">
+                            <div class="fields">
+                                <label for="input"> Natinality</label> <br>
+                                <select >
+                                    <option value="">Emirati</option>
+                                    <option value="">Indian</option>
+                                    <option value="">Arab</option>
+                                    <option value="">Portugese</option>
+                                    <option value="">Europe</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Currency</label> <br>
+                                <select >
+                                    <option value="">AED</option>
+                                    <option value="">USD</option>
+                                    <option value="">INR</option>
+                                    <option value="">DNR</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Nights</label> <br>
+                                <select >
+                                    <option value="">5 Star</option>
+                                    <option value="">4 Star</option>
+                                    <option value="">3 Star</option>
+                                    <option value="">2 Star</option>
+                                    <option value="">1 Star</option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input"> Room occupancy</label> <br>
+                                <select >
+                                    <option value="">5</option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Adults</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2 </option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                            <div class="fields">
+                                <label for="input">No of Childs</label> <br>
+                                <select >
+                                    <option value="">5 </option>
+                                    <option value="">4 </option>
+                                    <option value="">3 </option>
+                                    <option value="">2</option>
+                                    <option value="">1 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5 id="advanced-4">Advanced Search <img src="assets/images/search-down.png" alt=""></h5>
+                       
+                    </div>
                </div>
                <div class="tab-pane" id="5a">
+                <div class="tab-fields">
+                       
+                    <div class="fields-row">
+                        <div class="fields">
+                            <label for="input"> Destination</label> <br>
+                            <input type="text" placeholder="Enter Your City">
+                        </div>
+                        <div class="fields">
+                            <label for="input"> Star Rating</label> <br>
+                            <select placeholder="5 Star">
+                                <option value="">5 Star</option>
+                                <option value="">4 Star</option>
+                                <option value="">3 Star</option>
+                                <option value="">2 Star</option>
+                                <option value="">1 Star</option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input">Check In  </label> <br>
+                            <input type="text" placeholder="Date" name="date" id="date9">
+                        </div>
+                        <div class="fields">
+                            <label for="input"> Check Out</label> <br>
+                            <input type="text" placeholder="Date" name="date" id="date10">
+                        </div>
+                        <div class="fields">
+                            <button class="booking-btn form-control">Search Now</button>
+                        </div>
+                    </div>
+
+                    <div class="fields-row" id="advanced-fields-5">
+                        <div class="fields">
+                            <label for="input"> Natinality</label> <br>
+                            <select >
+                                <option value="">Emirati</option>
+                                <option value="">Indian</option>
+                                <option value="">Arab</option>
+                                <option value="">Portugese</option>
+                                <option value="">Europe</option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input"> Currency</label> <br>
+                            <select >
+                                <option value="">AED</option>
+                                <option value="">USD</option>
+                                <option value="">INR</option>
+                                <option value="">DNR</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input"> Nights</label> <br>
+                            <select >
+                                <option value="">5 Star</option>
+                                <option value="">4 Star</option>
+                                <option value="">3 Star</option>
+                                <option value="">2 Star</option>
+                                <option value="">1 Star</option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input"> Room occupancy</label> <br>
+                            <select >
+                                <option value="">5</option>
+                                <option value="">4 </option>
+                                <option value="">3 </option>
+                                <option value="">2 </option>
+                                <option value="">1 </option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input">No of Adults</label> <br>
+                            <select >
+                                <option value="">5 </option>
+                                <option value="">4 </option>
+                                <option value="">3 </option>
+                                <option value="">2 </option>
+                                <option value="">1 </option>
+                            </select>
+                        </div>
+                        <div class="fields">
+                            <label for="input">No of Childs</label> <br>
+                            <select >
+                                <option value="">5 </option>
+                                <option value="">4 </option>
+                                <option value="">3 </option>
+                                <option value="">2</option>
+                                <option value="">1 </option>
+                            </select>
+                        </div>
+                    </div>
+                    <h5 id="advanced-5">Advanced Search <img src="assets/images/search-down.png" alt=""></h5>
+                   
+                </div>
                </div>
             </div>
       </div>
@@ -807,7 +1196,60 @@
             $("#advanced-fields").toggle().slow();
         });
 
+        $(document).ready(function(){
+        $("#advanced-fields-4").hide();
+        });
+
+        $("#advanced-4").click(function(){
+            $("#advanced-fields-4").toggle().slow();
+        });
+
+        $(document).ready(function(){
+        $("#advanced-fields-2").hide();
+        });
+
+        $("#advanced-2").click(function(){
+            $("#advanced-fields-2").toggle().slow();
+        });
+
+        $(document).ready(function(){
+        $("#advanced-fields-3").hide();
+        });
+
+        $("#advanced-3").click(function(){
+            $("#advanced-fields-3").toggle().slow();
+        });
+
+        $(document).ready(function(){
+        $("#advanced-fields-5").hide();
+        });
+
+        $("#advanced-5").click(function(){
+            $("#advanced-fields-5").toggle().slow();
+        });
     </script>
+
+<script>
+  
+</script>
+
+<script>
+   
+</script>
+
+<script>
+    
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#advanced-fields-5").hide();
+    });
+
+    $("#advanced-2").click(function(){
+        $("#advanced-fields-5").toggle().slow();
+    });
+</script>
 
     <script>
         $(function() {
@@ -818,6 +1260,50 @@
     <script>
         $(function() {
         $( "#date2" ).datepicker();
+        });
+    </script>
+     <script>
+        $(function() {
+        $( "#date3" ).datepicker();
+        });
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date4" ).datepicker();
+        });
+    </script>
+     <script>
+        $(function() {
+        $( "#date5" ).datepicker();
+        });
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date6" ).datepicker();
+        });
+    </script>
+     <script>
+        $(function() {
+        $( "#date7" ).datepicker();
+        });
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date8" ).datepicker();
+        });
+    </script>
+     <script>
+        $(function() {
+        $( "#date9" ).datepicker();
+        });
+    </script>
+
+    <script>
+        $(function() {
+        $( "#date10" ).datepicker();
         });
     </script>
    
