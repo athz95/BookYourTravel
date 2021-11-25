@@ -1442,7 +1442,7 @@ img.location-pin {
   margin: 0.8% 2%;
 }
 .package-row {
-  margin-left: 5%;
+  padding-left: 5%;
 }
 .package-middle-reviews .rating-circle {
   padding: 1% 2% !important;
@@ -2040,4 +2040,5 @@ tr.booking-table-rows.toggle-rows.toggle-headings {
   top: 20px;
   cursor: pointer;
   z-index: 99999;
+  display: none;
 }

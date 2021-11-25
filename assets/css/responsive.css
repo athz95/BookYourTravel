@@ -35,6 +35,13 @@
 
 /* //below-1300px */
 @media screen and (max-width: 1300px) and (min-width: 1100px) {
+  .booking-table-rows td p {
+    border-left: 1px solid darkgray;
+    font-size: 15px;
+    color: #707070;
+    width: 130px;
+}
+  
   .booking-btn-submit {
     background-color: #fff;
     color: #000;
@@ -431,11 +438,13 @@
     font-size: 13px;
     color: #707070;
     font-weight: 600 !important;
+    width: 105px;
   }
   .booking-table-rows td p {
     border-left: 1px solid darkgray;
     font-size: 13px;
     color: #707070;
+    width: 105px;
   }
   .carousel-control-prev {
     left: 198px;
@@ -444,7 +453,7 @@
     right: 198px;
   }
   .w-100 {
-    width: 65% !important;
+    width: 75% !important;
     margin: auto;
   }
   .slider-thumb {
@@ -1035,7 +1044,7 @@
     right: 138px;
   }
   .w-100 {
-    width: 65% !important;
+    width: 75% !important;
     margin: auto;
   }
   .slider-thumb {
@@ -1709,6 +1718,9 @@
 }
 /* //below-768px */
 @media screen and (max-width: 768px) and (min-width: 600px) {
+  button#dropdownMenuButton {
+    font-size: 14px;
+}
   .booking-table-rows td p {
     border-left: 1px solid darkgray;
     font-size: 15px;
@@ -1749,7 +1761,7 @@
     right: 118px;
   }
   .w-100 {
-    width: 65% !important;
+    width: 75% !important;
     margin: auto;
   }
   .slider-thumb {
@@ -2395,6 +2407,11 @@
     padding-left: 16%;
     flex-wrap: wrap;
   }
+  .package-fields-row {
+    margin: 5% 0% 0% 19%;
+    justify-content: flex-start !important;
+    padding-left: 9% !important;
+}
   .tab-fields h5 {
     text-align: center;
     margin-top: 3%;
@@ -2807,8 +2824,8 @@
   .offer-tag {
     width: 18%;
     float: left;
-    margin-left: -18px;
-    margin-top: -5px;
+    margin-left: -19px;
+    margin-top: 12px;
   }
   .latest-offers p {
     font-size: 13px;
@@ -3041,7 +3058,7 @@
     background-color: #fff;
     color: #000;
     border: none;
-    padding: 2px 5px;
+    padding: 6px 5px;
     cursor: pointer;
     border-radius: 50px;
     font-weight: 600;
@@ -3211,7 +3228,7 @@
 
   .package-buttons {
     display: flex;
-    margin: 3% 0% 0% 0%;
+    margin: 4% 0% 1% 20%;
   }
   .tab-fields h6 {
     text-align: center;
